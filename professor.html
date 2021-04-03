@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário - Professor </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+</head>
+<body id="tela">
+    
+    <!-- Cabeçalho -->
+    <div id="cabeçalho" class="cabeçalho">
+        <h2 class="logo"><i class="fab fa-wpforms"></i> Formulário Professor</h2>
+      
+        <nav class="menu">
+            <ul>
+                <li><a href="index.php">HOME</a></li>
+                <li>FORMULÁRIO
+                    <ul class="subMenu">
+                        <a href="aluno.html">Aluno</a>
+                        <a href="professor.html">Professor</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Tela -->
+    <div>
+        <!-- Formulário -->
+        <div id="formulario" style="position: center;
+                                    background-color: rgba(0, 0, 0, 0.253);
+                                    width: 75%;
+                                    margin: 0px auto;
+                                    padding: 10px 5%;
+                                     border: black;
+        ">
+            <form action="PHP/salvar.php" method="post">
+                <label><strong> Digite seu Nome: </strong></label>
+                <input name="nome" type="text" required/> <br />
+                <label><strong> Você leciona em escola pública ou privada? </strong></label> <br />
+                <input name="tipoEscola" value="publica" type="radio" required/> Pública <br />
+                <input name="tipoEscola" value="particular" type="radio" required/> Particular <br />
+                <input name="tipoEscola" value="ambas" type="radio" required/> Pública e Particular <br />
+                <br />
+                <label><strong>  Foi oferecido algum recurso da instituição que auxilie em suas aulas? </strong></label> <br />
+                <input name="auxilio" value="sim" type="radio" required/> Sim <br />
+                <input name="auxilio" value="nao" type="radio" required/> Não <br />
+                <br />
+                <label><strong> Você já possuía experiências com o ensino à distância? </strong></label> <br />
+                <input name="experiencia" value="estudou" type="radio" required/> Já estudei no formato remoto <br />
+                <input name="experiencia" value="lecionou" type="radio" required/> Já lecionei no formato remoto <br />
+                <input name="experiencia" value="lecionou" type="radio" required/> Já lecionei e lecionei no formato remoto <br />
+                <input name="experiencia" value="nao" type="radio" required/> Nunca havia lecionado ou estudado no formato remoto <br />
+                <br />
+                <label><strong>  Como você classifica a qualidade das aulas a distância? </strong></label> <br />
+                <input name="qualidade" value="excelente" type="radio" required/> Excelente <br />
+                <input name="qualidade" value="bom" type="radio" required/> Bom <br />
+                <input name="qualidade" value="regular" type="radio" required/> Regular <br />
+                <input name="qualidade" value="ruim" type="radio" required/> Ruim <br />
+                <input name="qualidade" value="pessimo" type="radio" required/> Péssimo <br />
+                <br />
+                <label><strong> Qual das plataformas abaixo você utiliza durante as aulas com mais frequência? </strong></label> <br />
+                <input name="plataformas" value="meet" type="radio" required/> Plataformas Google<br />
+                <input name="plataformas" value="whatsapp" type="radio" required/> Whatsapp<br />
+                <input name="plataformas" value="outro" type="radio" required/> Outro<br />
+                <br />
+                <label><strong> Em suas aulas, o uso da câmera ligada é obrigatório para computar presença? </strong></label> <br />
+                <input name="camera" value="sim" type="radio" required/> Sim<br />
+                <input name="camera" value="nao" type="radio" required/> Não<br />
+                <input name="camera" value="semFrequencia" type="radio" required/> Não computo frequência das minha aulas<br />
+                <br />
+                <label><strong> Qual o grau de participação de seus alunos durante a aula? </strong></label> <br />
+                <input name="participacao" value="bom" type="radio" required/> Bom<br />
+                <input name="participacao" value="aceitavel" type="radio" required/> Aceitável<br />
+                <input name="participacao" value="ruim" type="radio" required/> Ruim<br />
+                <br />
+                <label><strong> De 0 a 100, qual o grau de frequência dos seus alunos nas aulas remotas? </strong></label> <br />
+                <input name="frequencia" type="text" required/> <br />
+                <br /> 
+                <label><strong> Qual sua opinião quanto ao sistema remoto? </strong></label> <br />
+                <textarea name="opiniao" style="resize: none" rows="4" cols="100" required></textarea><br />
+                <br />
+                <input name="submitProfessor" type="submit" value="Enviar" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>

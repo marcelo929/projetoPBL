@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário - Aluno </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+</head>
+<body id="tela">
+
+    <!-- Cabeçalho -->
+    <div class="cabeçalho">
+        <h2 class="logo"><i class="fab fa-wpforms"></i> Formulário Aluno</h2>
+        <!-- Menu Inicial -->
+        <nav class="menu">
+            <ul>
+                <li><a href="index.php">HOME</a></li>
+                <li>FORMULÁRIO
+                    <ul class="subMenu">
+                        <a href="aluno.html">Aluno</a>
+                        <a href="professor.html">Professor</a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Tela -->
+    <div>
+        <!-- Formulário -->
+        <div id="formulario" style="position: center;
+                                    background-color: rgba(0, 0, 0, 0.253);
+                                    width: 75%;
+                                    margin: 0px auto;
+                                    padding: 10px 5%;
+                                     border: black;
+        ">
+            <form action="PHP/salvar.php" method="post">
+                <label><strong> Digite seu Nome: </strong></label>
+                &nbsp;<input name="nome" type="text" required/><br />
+                <label><strong> Você estuda em escola pública ou privada? </strong></label> <br />
+                <input name="tipoEscola" value="publica" type="radio" required/> Pública <br />
+                <input name="tipoEscola" value="particular" type="radio" required/> Particular <br />
+                <br />
+                <label><strong> Foi disponibilizado algum recurso da sua escola para acompanhar o ensino remoto? </strong></label> <br />
+                <input name="auxilio" value="sim" type="radio" required/> Sim <br />
+                <input name="auxilio" value="nao" type="radio" required/> Não <br />
+                <br />
+                <label><strong> De 0 a 100, você costuma com que frequência ir às aulas? </strong></label> <br />
+                <input name="frequencia" type="text" required/> <br />
+                <br />
+                <label><strong> Você costuma participar das aulas? </strong></label> <br/>
+                <input name="participacao" value="ligaCamera" type="radio" required/> Ligo a câmera ou o áudio sempre que possível<br />
+                <input name="participacao" value="usaChat" type="radio" required/> Participo da aula pelo chat<br />
+                <input name="participacao" value="naoParticipa" type="radio" required/> não tenho o costume de participar da aula<br />
+                <input name="participacao" value="naoConsegue" type="radio" required/> Não tenho recursos para participar pelo áudio ou abrindo a câmera<br />
+                <br />
+                <label><strong> Como você classifica a qualidade das aulas a distância? </strong></label> <br />
+                <input name="qualidade" value="excelente" type="radio" required/> Excelente <br />
+                <input name="qualidade" value="bom" type="radio" required/> Bom <br />
+                <input name="qualidade" value="regular" type="radio" required/> Regular <br />
+                <input name="qualidade" value="ruim" type="radio" required/> Ruim <br />
+                <input name="qualidade" value="pessimo" type="radio" required/> Péssimo <br />
+                <br />
+                <label><strong> Você já possuía experiências com o ensino remoto? </strong></label> <br />
+                <input name="experiencia" value="sim" type="radio" required/> Sim<br />
+                <input name="experiencia" value="nao" type="radio" required/> Não<br />
+                <br />
+                <label><strong> Na sua opinião, sua curva de aprendizado caiu com a implementação do EAD? </strong></label><br />
+                <input name="aprendizado" value="sim" type="radio" required/> Sim<br />
+                <input name="aprendizado" value="nao" type="radio" required/> Não<br />
+                <br />
+                <label><strong> Qual sua opinião quanto ao sistema remoto? </strong></label> <br />
+                <textarea name="opiniao" rows="2" cols="50" required></textarea><br />
+                <br />
+                <input name="submitAluno" type="submit" value="Enviar" />
+            </form>
+        </div>
+    </div>
+</body>
+</html>
