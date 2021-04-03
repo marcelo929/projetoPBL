@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#alerta{
+    clear: left;
+    background-color: #EB9F33;
+    padding: 2% 0;
+    border: double;
+    margin: 3%;
+}
+
+.cabeçalho{
+    height: 100px;
+    background: black;
+    padding: 0 20px;
+    color: white;
+}
+
+.logo{
+    line-height: 100px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.menu{
+    float: right;
+    line-height: 100px;
+}
+
+.subMenu{
+    background-color: black;
+    display:run-in;
+}
+
+.menu a{
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.menu li{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    float: left;
+    padding: 0 10px;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.menu ul{
+    padding: 0;
+}
+
+.menu ul ul{
+    display: none;
+}
+
+.menu ul li:hover > ul{
+    display: grid;
+}
+
+.menu a:hover, .menu li:hover, .show-menu-btn:hover, .hide-menu-btn:hover{
+    color: #f5deb2;
+}
+
+.conteúdo p{
+    width: 904px;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.coluna1 p{
+    width: 390px;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.coluna1 p{
+    display: inline-block;
+}
+
+.coluna2 p{
+    width: 904px;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.coluna3 p{
+    width: 390px;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.coluna3 img{
+    height: 260px;
+}
+
+.coluna3 p,img{
+    display: inline-block;
+}
+
+.coluna4 p{
+    width: 904px;
+    line-height: 26px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#tela{
+    background-color: white;
+}
+
+
+textarea{
+    min-width: 95%;
+    max-width: 95%;
+    resize: none;
+}
+
+.botão{
+    margin: none 20px;
+}
+
+
