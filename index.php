@@ -37,7 +37,7 @@
             <h1>Qual a principal dificuldade dos alunos nas aulas remotas no Brasil e no Maranhão?</h1>
             <br/>
             <video id="myvideo">
-                <source src="src/videos/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                <source src="src/video/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                 <script>
                     var video = document.getElementById("myvideo");
                     if (video.hasAttribute("controls")) {
