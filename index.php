@@ -81,5 +81,42 @@
             </p>
             </center>
         </div>
+    
+    <div class="coluna5">
+            <center>
+                <br/>
+                <h3>Observe os gráficos informativos quanto à opinião geral 
+                    dos alunos acerca do ensino remoto:</h3>
+                <br/>
+                <img src="src/imagens/graficoFrequencia.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/graficoDificuldade.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/graficoParticipação.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/graficoQualidade.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/graficoRecursos.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+            </center>
+        </div>
+        
+        <div class="coluna6">
+            <center>
+                <br/>
+                <h3>Também foi feita uma pesquisa para saber o lado dos professores, veja como foram as respostas:</h3>
+                <br/>
+                <img src="src/imagens/profCamara.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/profFrequencia.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/profParticipação.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/profPlataformas.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+                <img src="src/imagens/profQualidade.png" style = "display: block; width: 700px; height: 300px;">
+                <br/>
+            </center>
+        </div>
 </body>
 </html>
